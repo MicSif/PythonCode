@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>index</title>
+</head>
+<body>
+	{% for each in file_name %}
+	<a href="/files/{{ each.id }}">{{ each.title }}</a>
+	{% for each_tag in tags_dict[each.title] %}
+	<p>{{ each_tag }}&nbsp;<p>
+	{% endfor %}
+	<br>
+	{% endfor %}
+</body>
+</html>
