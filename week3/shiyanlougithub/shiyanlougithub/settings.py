@@ -9,10 +9,10 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'shiyanlou'
+BOT_NAME = 'shiyanlougithub'
 
-SPIDER_MODULES = ['shiyanlou.spiders']
-NEWSPIDER_MODULE = 'shiyanlou.spiders'
+SPIDER_MODULES = ['shiyanlougithub.spiders']
+NEWSPIDER_MODULE = 'shiyanlougithub.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'shiyanlou.pipelines.ShiyanlouPipeline': 300,
+    'shiyanlougithub.pipelines.ShiyanlouPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
